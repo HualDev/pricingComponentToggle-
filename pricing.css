@@ -46,7 +46,6 @@ h1{
     gap: 0.5rem;
     align-items: center;
     color: var(--lightGrayishBlue);
-    margin-bottom: 5rem;
 }
 
 .toggle{
@@ -58,6 +57,10 @@ h1{
     justify-content: end;
     padding: 3px;
     align-items: center;
+}
+
+.circle_left{
+    justify-content: left;
 }
 
 .toggle:hover{
@@ -96,12 +99,16 @@ h1{
     border: solid 2px white;
 }
 
-h2{
+.plan h2{
     color: var(--darkGrayishBlue);
 }
 
 .plan span{
     font-size: 4rem;
+}
+
+.no_show{
+    display: none;
 }
 
 hr{
@@ -131,6 +138,10 @@ hr{
     color: white;
 }
 
+.choose h2{
+    color: white;
+}
+
 .choose p{
     color: white;
 }
@@ -143,9 +154,8 @@ hr{
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 1rem;
     text-align: center;
-    margin-top: 2rem;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
@@ -183,12 +193,11 @@ hr{
 
     .plan{
         width: 33%;
-        height: 60vh;
         margin: 0;
     }
 
     .choose{
-        height: 64vh;
+        padding: 3rem 2rem;
     }
 }
 
