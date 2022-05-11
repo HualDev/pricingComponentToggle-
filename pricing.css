@@ -13,4 +13,119 @@
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background-image: url('./images/bg-top.svg');
+    background-repeat: no-repeat;    
+    background-size: contain;
+    background-position: 12rem -2rem;
+    background-color: var(--veryLightGrayishBlue);
+}
+
+
+body::after{
+    content: '';
+    background-image: url('./images/bg-bottom.svg');
+    background-repeat: no-repeat;    
+    background-size: contain;
+    position: absolute;    
+    height: 55%;
+    width: 100%;
+    bottom: -75rem;
+    left: -15rem;
+    z-index: -1;
+}
+
+h1{
+    text-align: center;
+    color: var(--grayishBlue);
+    margin-top: 5rem;
+    
+}
+
+.frecuency{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    color: var(--lightGrayishBlue);
+    margin-bottom: 5rem;
+}
+
+.toggle{
+    width: 3rem;
+    height: 1.5rem;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    border-radius: 1rem;
+    display: flex;
+    justify-content: end;
+    padding: 3px;
+    align-items: center;
+}
+
+.circle{
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.plan{
+    width: 85%;
+    background-color: white;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h2{
+    color: var(--darkGrayishBlue);
+}
+
+.plan span{
+    font-size: 4rem;
+}
+
+hr{
+    border-color: var(--lightGrayishBlue);
+    opacity: 0.3;
+}
+
+.plan p{
+    color: var(--grayishBlue);
+}
+
+.plan button{
+    margin-top: 1.5rem;
+    display: block;
+    border: none;
+    background-image: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.choose{
+    background-color: hsl(236, 72%, 79%);
+    color: white;
+}
+
+.choose p{
+    color: white;
+}
+
+.choose button{
+    background-image: none;
+    color: hsl(237, 63%, 64%);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+@media (min-width:450px) {
+    body{
+        background-position: 18rem -2rem;
+    }
 }
